@@ -24,3 +24,8 @@ header {
     background-color: #e3f6f5;
     z-index: 99;
 }
+
+header .logo {
+    float: left;
+    margin: 25px 0 0 70px;
+}
