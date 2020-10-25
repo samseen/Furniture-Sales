@@ -29,3 +29,30 @@ header .logo {
     float: left;
     margin: 25px 0 0 70px;
 }
+
+header .menu {
+    float: right;
+    margin: 35px 50px 0 0;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: #2c698d;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.slide-left {
+    float: left;
+    background-color: #fff;
+    position: relative;
+    margin-top: 100px;
+    width: 640px;
+    height: 100%;
+    padding: 100px;
+    z-index: 99;
+}
