@@ -105,6 +105,14 @@ header ul li a {
 
 .swiper-button-prev,
 .swiper-button-next {
-    top: inherit;
+    top: inherit !important;
     bottom: 28px;
+}
+
+.swiper-button-prev {
+    left: 576px !important;
+}
+
+.swiper-button-next {
+    right: 576px !important;
 }
