@@ -94,13 +94,21 @@
                     prevEl: '.swiper-button-prev',
                 }
             })
-            
+
             // Swiper Events
             mySwiper.on('slideChangeTransitionStart', function() { 
                 anime({
                     targets: '.swiper-slide-active .slide-right img',
                     scale: [1.2, 1],
                     opacity: [0, 1],
+                    easing: 'easeInOutQuart'
+                });
+
+                anime({
+                    targets: '.swiper-slide-active .slide-left .element',
+                    translateY: [50, 0],
+                    opacity: [0, 1],
+                    delay: anime.stagger(150, {start: 500}),
                     easing: 'easeInOutQuart'
                 });
             });
