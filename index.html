@@ -145,10 +145,18 @@
         });
 
         anime({
-            targets: '.swiper-slide-active .slide-left .element',
-            translateY: [50, 0],
+            targets: '.swiper-button-prev',
+            translateX: [-100, 0],
             opacity: [0, 1],
-            delay: anime.stagger(250, {start: 1700}),
+            delay: 3000,
+            easing: 'easeInOutQuart'
+        });
+
+        anime({
+            targets: '.swiper-button-next',
+            translateX: [100, 0],
+            opacity: [0, 1],
+            delay: 3000,
             easing: 'easeInOutQuart'
         });
     </script>
