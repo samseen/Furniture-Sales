@@ -103,6 +103,22 @@
             opacity: [0, 1],
             easing: 'easeInOutQuart'
         });
+
+        anime({
+            targets: '.logo img',
+            rotate: 360,
+            opacity: [0, 1],
+            delay: 500,
+            easing: 'easeInOutQuart'
+        });
+
+        anime({
+            targets: '.menu li',
+            translateY: [50, 0],
+            opacity: [0, 1],
+            delay: anime.stagger,
+            easing: 'easeInOutQuart'
+        });
     </script>
 </body>
 </html>
